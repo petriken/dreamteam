@@ -1,8 +1,8 @@
 class DrawNews{
     makeNewsBlock(data){
         const fragment = document.createDocumentFragment();
-        const newsItem = document.querySelector(".result-temp").firstElementChild;
-
+        const newsItem = document.querySelector(".result-temp").content;
+        console.log(document.querySelector(".result-temp"));
         data.forEach((item) => {
             const block = newsItem.cloneNode(true);
             const header = block.querySelector(".heading");
@@ -15,6 +15,6 @@ class DrawNews{
         });
 
         const newsBlock = document.querySelector(".news-block");
-        newsBlock.appendChild(newsBlock);
+        newsBlock.appendChild(fragment);
     }   
 }
