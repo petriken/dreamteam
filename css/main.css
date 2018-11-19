@@ -27,10 +27,8 @@ body {
 }
 .wrap {
     width: 80%;
-    height: 100%;
     margin-left: 10%;
     min-height: 100vh;
-    background-color: #282E36;
 }
 .main-heading {
     padding-top: 130px;
@@ -40,10 +38,10 @@ body {
     text-transform: uppercase;
 }
 .result {
-    width: 42.5%;
+    width: 23%;
     min-width: 300px;
     min-height: 500px;
-    margin: 5%;
+    margin: 4%;
     display: inline-block;
     float: left;
     background-color: #fafafa;
@@ -58,4 +56,7 @@ body {
     text-indent: 1.5em;
     color: #252525;
     font-size: calc( (100vw - 480px)/(1240 - 480) * (16 - 12) + 12px);
+}
+.news-block {
+    width: 100%;
 }
